@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="110.362" tests="34" errors="0" skipped="3" failures="14">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\hp\IdeaProjects\SeleniumWithMoataz\drivers\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1256"/>
+    <property name="java.class.path" value="C:\Users\hp\IdeaProjects\SeleniumWithMoataz\target\test-classes;C:\Users\hp\IdeaProjects\SeleniumWithMoataz\target\classes;C:\Users\hp\.m2\repository\org\testng\testng\7.6.0\testng-7.6.0.jar;C:\Users\hp\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\hp\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\hp\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\hp\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-java\4.2.2\selenium-java-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-api\4.2.2\selenium-api-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v100\4.2.2\selenium-devtools-v100-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.2.2\selenium-devtools-v101-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.2.2\selenium-devtools-v102-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.2.2\selenium-devtools-v85-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.2.2\selenium-edge-driver-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.2.2\selenium-firefox-driver-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.2.2\selenium-ie-driver-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.2.2\selenium-opera-driver-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.2.2\selenium-remote-driver-4.2.2.jar;C:\Users\hp\.m2\repository\io\netty\netty-buffer\4.1.77.Final\netty-buffer-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-codec-http\4.1.77.Final\netty-codec-http-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-codec\4.1.77.Final\netty-codec-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-handler\4.1.77.Final\netty-handler-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-common\4.1.77.Final\netty-common-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.77.Final\netty-transport-classes-epoll-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.77.Final\netty-transport-classes-kqueue-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-native-epoll\4.1.77.Final\netty-transport-native-epoll-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.77.Final\netty-transport-native-kqueue-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.77.Final\netty-transport-native-unix-common-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport\4.1.77.Final\netty-transport-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-resolver\4.1.77.Final\netty-resolver-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-api\1.14.0\opentelemetry-api-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-context\1.14.0\opentelemetry-context-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.14.0\opentelemetry-exporter-logging-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.14.0\opentelemetry-sdk-metrics-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.14.0-alpha\opentelemetry-sdk-logs-1.14.0-alpha.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.14.0\opentelemetry-sdk-common-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.14.0\opentelemetry-sdk-extension-autoconfigure-spi-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.14.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.14.0-alpha.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.14.0\opentelemetry-sdk-trace-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.14.0\opentelemetry-sdk-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.14.0-alpha\opentelemetry-semconv-1.14.0-alpha.jar;C:\Users\hp\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\hp\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\hp\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\hp\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\hp\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\hp\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\hp\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\hp\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-http\4.2.2\selenium-http-4.2.2.jar;C:\Users\hp\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.2.2\selenium-safari-driver-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-support\4.2.2\selenium-support-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.2.1\selenium-chrome-driver-4.2.1.jar;C:\Users\hp\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\hp\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\hp\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\hp\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\hp\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\hp\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\hp\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\hp\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\hp\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.2.1\selenium-chromium-driver-4.2.1.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-json\4.2.1\selenium-json-4.2.1.jar;C:\Users\hp\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\hp\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\hp\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Jerusalem"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin"/>
+    <property name="sun.java.command" value="C:\Users\hp\AppData\Local\Temp\surefire13949768425688557285\surefirebooter8627346805358734739.jar C:\Users\hp\AppData\Local\Temp\surefire13949768425688557285 2022-06-14T16-56-46_567-jvmRun1 surefire17032880569797076288tmp surefire_05878282871132670242tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\hp\IdeaProjects\SeleniumWithMoataz\target\test-classes;C:\Users\hp\IdeaProjects\SeleniumWithMoataz\target\classes;C:\Users\hp\.m2\repository\org\testng\testng\7.6.0\testng-7.6.0.jar;C:\Users\hp\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\hp\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\hp\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\hp\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-java\4.2.2\selenium-java-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-api\4.2.2\selenium-api-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v100\4.2.2\selenium-devtools-v100-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.2.2\selenium-devtools-v101-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.2.2\selenium-devtools-v102-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.2.2\selenium-devtools-v85-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.2.2\selenium-edge-driver-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.2.2\selenium-firefox-driver-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.2.2\selenium-ie-driver-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.2.2\selenium-opera-driver-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.2.2\selenium-remote-driver-4.2.2.jar;C:\Users\hp\.m2\repository\io\netty\netty-buffer\4.1.77.Final\netty-buffer-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-codec-http\4.1.77.Final\netty-codec-http-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-codec\4.1.77.Final\netty-codec-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-handler\4.1.77.Final\netty-handler-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-common\4.1.77.Final\netty-common-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.77.Final\netty-transport-classes-epoll-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.77.Final\netty-transport-classes-kqueue-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-native-epoll\4.1.77.Final\netty-transport-native-epoll-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.77.Final\netty-transport-native-kqueue-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.77.Final\netty-transport-native-unix-common-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport\4.1.77.Final\netty-transport-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-resolver\4.1.77.Final\netty-resolver-4.1.77.Final.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-api\1.14.0\opentelemetry-api-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-context\1.14.0\opentelemetry-context-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.14.0\opentelemetry-exporter-logging-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.14.0\opentelemetry-sdk-metrics-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.14.0-alpha\opentelemetry-sdk-logs-1.14.0-alpha.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.14.0\opentelemetry-sdk-common-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.14.0\opentelemetry-sdk-extension-autoconfigure-spi-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.14.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.14.0-alpha.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.14.0\opentelemetry-sdk-trace-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.14.0\opentelemetry-sdk-1.14.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.14.0-alpha\opentelemetry-semconv-1.14.0-alpha.jar;C:\Users\hp\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\hp\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\hp\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\hp\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\hp\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\hp\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\hp\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\hp\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\hp\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-http\4.2.2\selenium-http-4.2.2.jar;C:\Users\hp\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.2.2\selenium-safari-driver-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-support\4.2.2\selenium-support-4.2.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.2.1\selenium-chrome-driver-4.2.1.jar;C:\Users\hp\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\hp\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\hp\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\hp\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\hp\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\hp\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\hp\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\hp\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\hp\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.2.1\selenium-chromium-driver-4.2.1.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-json\4.2.1\selenium-json-4.2.1.jar;C:\Users\hp\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\hp\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\hp\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\hp"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.13"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\hp\IdeaProjects\SeleniumWithMoataz"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\hp\AppData\Local\Temp\surefire13949768425688557285\surefirebooter8627346805358734739.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.13+10-LTS-370"/>
+    <property name="user.name" value="hp"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1256"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\hp\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\hp\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.13"/>
+    <property name="user.dir" value="C:\Users\hp\IdeaProjects\SeleniumWithMoataz"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-11.0.13\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\hp\Desktop\selenium\chromedriver.exe;C:\Program Files (x86)\Perforce\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\hp\Downloads\Compressed\apache-maven-3.8.4\bin;C:\Users\hp\Desktop\ffmpeg-2022-01-03-git-68d0a7e446-full_build\bin;C:\Users\hp\AppData\Local\Android\Sdk\tools\bin;C:\Users\hp\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\node_modules\npm\bin;C:\Program Files\dotnet\;C:\Users\hp\Downloads\Compressed\apache-maven-3.8.4\bin;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Roaming\npm;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\bin;;;C:\Program Files\JetBrains\WebStorm 2021.2.3\bin;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.13+10-LTS-370"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="userCanRegisterSuccessfully" classname="tests.UserRegistrationTest" time="4.031">
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Jun 14, 2022 4:56:50 PM org.openqa.selenium.remote.RemoteWebDriver startSession
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [acceptSslCerts]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 61734
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 14, 2022 4:56:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+Jun 14, 2022 4:56:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [acceptSslCerts]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Jun 14, 2022 4:56:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found exact CDP implementation for version 102
+]]></system-err>
+  </testcase>
+  <testcase name="registeredUserCanLogout" classname="tests.UserRegistrationTest" time="0.946"/>
+  <testcase name="registeredUserCanLogin" classname="tests.UserRegistrationTest" time="3.304"/>
+  <testcase name="userCanRegisterSuccessfully" classname="tests.AddProductReviewTest" time="2.122">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Register&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;&#10;System info: host: &apos;DESKTOP-2KD9ONT&apos;, ip: &apos;172.28.192.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=link text, value=Register}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22943cf34a68fdd4b454116f5e1e7419" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"Register"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-2KD9ONT', ip: '172.28.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22943cf34a68fdd4b454116f5e1e7419
+	at tests.AddProductReviewTest.userCanRegisterSuccessfully(AddProductReviewTest.java:23)
+]]></failure>
+  </testcase>
+  <testcase name="userCanSearchWithAutoSuggest" classname="tests.AddProductReviewTest" time="7.178">
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="registeredUserCanAddProductReview" classname="tests.AddProductReviewTest" time="5.365"/>
+  <testcase name="userCanCompareProducts" classname="tests.AddProductToCompareTest" time="9.788">
+    <system-out><![CDATA[8
+  Remove Remove	
+ 	
+Remove	
+Remove	
+ 	
+	
+	
+Name	
+Asus N551JK-XO076H Laptop	
+Apple MacBook Pro 13-inch	
+Price	
+$1,500.00	
+$1,800.00	
+Screensize	
+15.6''	
+13.0''	
+CPU Type	
+Intel Core i7	
+Intel Core i5	
+Memory	
+16 GB	
+4 GB	
+Hard drive	
+1 TB	
+ 	
+ 	
+ 	
+Remove	
+Remove	
+ 	
+	
+	
+Name	
+Asus N551JK-XO076H Laptop	
+Apple MacBook Pro 13-inch	
+Price	
+$1,500.00	
+$1,800.00	
+Screensize	
+15.6''	
+13.0''	
+CPU Type	
+Intel Core i7	
+Intel Core i5	
+Memory	
+16 GB	
+4 GB	
+Hard drive	
+1 TB	
+ 	
+Name Asus N551JK-XO076H Laptop Apple MacBook Pro 13-inch	
+ 	
+Remove	
+Remove	
+ 	
+	
+	
+Name	
+Asus N551JK-XO076H Laptop	
+Apple MacBook Pro 13-inch	
+Price	
+$1,500.00	
+$1,800.00	
+Screensize	
+15.6''	
+13.0''	
+CPU Type	
+Intel Core i7	
+Intel Core i5	
+Memory	
+16 GB	
+4 GB	
+Hard drive	
+1 TB	
+ 	
+Price $1,500.00 $1,800.00	
+ 	
+Remove	
+Remove	
+ 	
+	
+	
+Name	
+Asus N551JK-XO076H Laptop	
+Apple MacBook Pro 13-inch	
+Price	
+$1,500.00	
+$1,800.00	
+Screensize	
+15.6''	
+13.0''	
+CPU Type	
+Intel Core i7	
+Intel Core i5	
+Memory	
+16 GB	
+4 GB	
+Hard drive	
+1 TB	
+ 	
+Screensize 15.6'' 13.0''	
+ 	
+Remove	
+Remove	
+ 	
+	
+	
+Name	
+Asus N551JK-XO076H Laptop	
+Apple MacBook Pro 13-inch	
+Price	
+$1,500.00	
+$1,800.00	
+Screensize	
+15.6''	
+13.0''	
+CPU Type	
+Intel Core i7	
+Intel Core i5	
+Memory	
+16 GB	
+4 GB	
+Hard drive	
+1 TB	
+ 	
+CPU Type Intel Core i7 Intel Core i5	
+ 	
+Remove	
+Remove	
+ 	
+	
+	
+Name	
+Asus N551JK-XO076H Laptop	
+Apple MacBook Pro 13-inch	
+Price	
+$1,500.00	
+$1,800.00	
+Screensize	
+15.6''	
+13.0''	
+CPU Type	
+Intel Core i7	
+Intel Core i5	
+Memory	
+16 GB	
+4 GB	
+Hard drive	
+1 TB	
+ 	
+Memory 16 GB 4 GB	
+ 	
+Remove	
+Remove	
+ 	
+	
+	
+Name	
+Asus N551JK-XO076H Laptop	
+Apple MacBook Pro 13-inch	
+Price	
+$1,500.00	
+$1,800.00	
+Screensize	
+15.6''	
+13.0''	
+CPU Type	
+Intel Core i7	
+Intel Core i5	
+Memory	
+16 GB	
+4 GB	
+Hard drive	
+1 TB	
+ 	
+Hard drive 1 TB  	
+ 	
+Remove	
+Remove	
+ 	
+	
+	
+Name	
+Asus N551JK-XO076H Laptop	
+Apple MacBook Pro 13-inch	
+Price	
+$1,500.00	
+$1,800.00	
+Screensize	
+15.6''	
+13.0''	
+CPU Type	
+Intel Core i7	
+Intel Core i5	
+Memory	
+16 GB	
+4 GB	
+Hard drive	
+1 TB	
+ 	
+]]></system-out>
+  </testcase>
+  <testcase name="userCanClearCompareList" classname="tests.AddProductToCompareTest" time="1.324"/>
+  <testcase name="userCanSearchWithAutoSuggest" classname="tests.AddProductToWishlistTest" time="2.088">
+    <failure message="Index 0 out of bounds for length 0" type="java.lang.IndexOutOfBoundsException"><![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at tests.AddProductToWishlistTest.userCanSearchWithAutoSuggest(AddProductToWishlistTest.java:19)
+]]></failure>
+  </testcase>
+  <testcase name="userCanAddProductToWishlist" classname="tests.AddProductToWishlistTest" time="2.044">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#add\-to\-wishlist\-button\-4&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;&#10;System info: host: &apos;DESKTOP-2KD9ONT&apos;, ip: &apos;172.28.192.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=id, value=add-to-wishlist-button-4}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22943cf34a68fdd4b454116f5e1e7419" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#add\-to\-wishlist\-button\-4"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-2KD9ONT', ip: '172.28.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=id, value=add-to-wishlist-button-4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22943cf34a68fdd4b454116f5e1e7419
+	at tests.AddProductToWishlistTest.userCanAddProductToWishlist(AddProductToWishlistTest.java:25)
+]]></failure>
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="userCanRemoveProductFromCart" classname="tests.AddProductToWishlistTest" time="2.035">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;td.remove-from-cart [name=&apos;updatecart&apos;]&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;&#10;System info: host: &apos;DESKTOP-2KD9ONT&apos;, ip: &apos;172.28.192.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=css selector, value=td.remove-from-cart [name=&apos;updatecart&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22943cf34a68fdd4b454116f5e1e7419" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"td.remove-from-cart [name='updatecart']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-2KD9ONT', ip: '172.28.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=css selector, value=td.remove-from-cart [name='updatecart']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22943cf34a68fdd4b454116f5e1e7419
+	at tests.AddProductToWishlistTest.userCanRemoveProductFromCart(AddProductToWishlistTest.java:35)
+]]></failure>
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="userCanUseContactUs" classname="tests.ContactUsTest" time="4.402">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.result&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;&#10;System info: host: &apos;DESKTOP-2KD9ONT&apos;, ip: &apos;172.28.192.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=css selector, value=div.result}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22943cf34a68fdd4b454116f5e1e7419" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"div.result"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-2KD9ONT', ip: '172.28.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=css selector, value=div.result}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22943cf34a68fdd4b454116f5e1e7419
+	at tests.ContactUsTest.userCanUseContactUs(ContactUsTest.java:44)
+]]></failure>
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="userCanChangeCurrency" classname="tests.ChangeCurrencyTest" time="0.949">
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="userCanSearchWithAutoSuggest" classname="tests.ChangeCurrencyTest" time="1.914">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at tests.ChangeCurrencyTest.userCanSearchWithAutoSuggest(ChangeCurrencyTest.java:28)
+]]></failure>
+  </testcase>
+  <testcase name="userCanRegisterSuccessfully" classname="tests.EmailFriendTest" time="2.111">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Register&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;&#10;System info: host: &apos;DESKTOP-2KD9ONT&apos;, ip: &apos;172.28.192.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=link text, value=Register}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22943cf34a68fdd4b454116f5e1e7419" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"Register"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-2KD9ONT', ip: '172.28.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22943cf34a68fdd4b454116f5e1e7419
+	at tests.EmailFriendTest.userCanRegisterSuccessfully(EmailFriendTest.java:23)
+]]></failure>
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="userCanSearchWithAutoSuggest" classname="tests.EmailFriendTest" time="1.936">
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="registeredUserCanSendProductToFriend" classname="tests.EmailFriendTest" time="4.255"/>
+  <testcase name="RegisteredUserCanLogout" classname="tests.EmailFriendTest" time="0">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+	at tests.EmailFriendTest.RegisteredUserCanLogout(EmailFriendTest.java:48)
+]]></failure>
+  </testcase>
+  <testcase name="userCanRegisterSuccessfully" classname="tests.MyAccountTest" time="2.038">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Register&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;&#10;System info: host: &apos;DESKTOP-2KD9ONT&apos;, ip: &apos;172.28.192.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=link text, value=Register}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22943cf34a68fdd4b454116f5e1e7419" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"Register"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-2KD9ONT', ip: '172.28.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22943cf34a68fdd4b454116f5e1e7419
+	at tests.MyAccountTest.userCanRegisterSuccessfully(MyAccountTest.java:82)
+]]></failure>
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="registeredUserCanChangePassword" classname="tests.MyAccountTest" time="0">
+    <skipped message="Method tests.MyAccountTest.registeredUserCanChangePassword() on instance tests.MyAccountTest@202b0582 depends on not successfully finished methods &#10;[tests.MyAccountTest.userCanRegisterSuccessfully() on instance tests.MyAccountTest@202b0582]"/>
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="registeredUserCanLogout" classname="tests.MyAccountTest" time="0">
+    <skipped message="Method tests.MyAccountTest.registeredUserCanLogout() on instance tests.MyAccountTest@202b0582 depends on not successfully finished methods &#10;[tests.MyAccountTest.registeredUserCanChangePassword() on instance tests.MyAccountTest@202b0582]"/>
+  </testcase>
+  <testcase name="registeredUserCanLogin" classname="tests.MyAccountTest" time="0">
+    <skipped message="Method tests.MyAccountTest.registeredUserCanLogin() on instance tests.MyAccountTest@202b0582 depends on not successfully finished methods &#10;[tests.MyAccountTest.registeredUserCanLogout() on instance tests.MyAccountTest@202b0582]"/>
+  </testcase>
+  <testcase name="userCanSelectSubCategoryFromMainMenu" classname="tests.ProductHoverMenuTest" time="2.031"/>
+  <testcase name="userCanRegisterSuccessfully" classname="tests.RegisteredUserCheckoutProductTest" time="2.023">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Register&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;&#10;System info: host: &apos;DESKTOP-2KD9ONT&apos;, ip: &apos;172.28.192.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=link text, value=Register}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22943cf34a68fdd4b454116f5e1e7419" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"link text","selector":"Register"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-2KD9ONT', ip: '172.28.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=link text, value=Register}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22943cf34a68fdd4b454116f5e1e7419
+	at tests.RegisteredUserCheckoutProductTest.userCanRegisterSuccessfully(RegisteredUserCheckoutProductTest.java:38)
+]]></failure>
+  </testcase>
+  <testcase name="userCanSearchWithAutoSuggest" classname="tests.RegisteredUserCheckoutProductTest" time="1.824">
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="userCanAddProductToShoppingCart" classname="tests.RegisteredUserCheckoutProductTest" time="2.27"/>
+  <testcase name="userCanCheckoutProduct" classname="tests.RegisteredUserCheckoutProductTest" time="14.886"/>
+  <testcase name="RegisteredUserCanLogout" classname="tests.RegisteredUserCheckoutProductTest" time="0.001">
+    <failure type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException
+	at tests.RegisteredUserCheckoutProductTest.RegisteredUserCanLogout(RegisteredUserCheckoutProductTest.java:79)
+]]></failure>
+  </testcase>
+  <testcase name="userCanSearchForProducts" classname="tests.SearchProductTest" time="4.088">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;strong.current-item&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;&#10;System info: host: &apos;DESKTOP-2KD9ONT&apos;, ip: &apos;172.28.192.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=css selector, value=strong.current-item}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22943cf34a68fdd4b454116f5e1e7419" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"strong.current-item"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-2KD9ONT', ip: '172.28.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=css selector, value=strong.current-item}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22943cf34a68fdd4b454116f5e1e7419
+	at tests.SearchProductTest.userCanSearchForProducts(SearchProductTest.java:40)
+]]></failure>
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="userCanSearchWithAutoSuggest" classname="tests.SearchProductUsingAutoSuggest" time="2.385">
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+  <testcase name="userCanSearchWithAutoSuggest" classname="tests.GuestCheckoutProductFromCart" time="1.986"/>
+  <testcase name="userCanAddProductToShoppingCart" classname="tests.GuestCheckoutProductFromCart" time="1.168"/>
+  <testcase name="userCanCheckoutProduct" classname="tests.GuestCheckoutProductFromCart" time="3.518">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.checkout-as-guest-or-register-block .buttons button.checkout-as-guest-button&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;&#10;System info: host: &apos;DESKTOP-2KD9ONT&apos;, ip: &apos;172.28.192.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=css selector, value=.checkout-as-guest-or-register-block .buttons button.checkout-as-guest-button}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22943cf34a68fdd4b454116f5e1e7419" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".checkout-as-guest-or-register-block .buttons button.checkout-as-guest-button"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-2KD9ONT', ip: '172.28.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=css selector, value=.checkout-as-guest-or-register-block .buttons button.checkout-as-guest-button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22943cf34a68fdd4b454116f5e1e7419
+	at tests.GuestCheckoutProductFromCart.userCanCheckoutProduct(GuestCheckoutProductFromCart.java:49)
+]]></failure>
+  </testcase>
+  <testcase name="userCanViewOrderDetails" classname="tests.GuestCheckoutProductFromCart" time="2.021">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.details .details-link a&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;&#10;System info: host: &apos;DESKTOP-2KD9ONT&apos;, ip: &apos;172.28.192.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=css selector, value=.details .details-link a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 22943cf34a68fdd4b454116f5e1e7419" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".details .details-link a"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'DESKTOP-2KD9ONT', ip: '172.28.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [22943cf34a68fdd4b454116f5e1e7419, findElement {using=css selector, value=.details .details-link a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:9350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:9350/devtool..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 22943cf34a68fdd4b454116f5e1e7419
+	at tests.GuestCheckoutProductFromCart.userCanViewOrderDetails(GuestCheckoutProductFromCart.java:59)
+]]></failure>
+    <system-out><![CDATA[Failed!
+Taking screenshot...
+]]></system-out>
+  </testcase>
+</testsuite>

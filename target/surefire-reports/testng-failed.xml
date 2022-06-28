@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [nopcommerce Regression Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Regression Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.RegisteredUserCheckoutProductTest">
+        <methods>
+          <include name="userCanRegisterSuccessfully"/>
+          <include name="startDriver"/>
+          <include name="RegisteredUserCanLogout"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.RegisteredUserCheckoutProductTest -->
+      <class name="tests.ChangeCurrencyTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="userCanSearchWithAutoSuggest"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.ChangeCurrencyTest -->
+      <class name="tests.MyAccountTest">
+        <methods>
+          <include name="userCanRegisterSuccessfully"/>
+          <include name="startDriver"/>
+          <include name="registeredUserCanLogin"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+          <include name="registeredUserCanLogout"/>
+          <include name="registeredUserCanChangePassword"/>
+        </methods>
+      </class> <!-- tests.MyAccountTest -->
+      <class name="tests.EmailFriendTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="userCanRegisterSuccessfully"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+          <include name="RegisteredUserCanLogout"/>
+        </methods>
+      </class> <!-- tests.EmailFriendTest -->
+      <class name="tests.SearchProductTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="userCanSearchForProducts"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.SearchProductTest -->
+      <class name="tests.ContactUsTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="userCanUseContactUs"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.ContactUsTest -->
+      <class name="tests.GuestCheckoutProductFromCart">
+        <methods>
+          <include name="userCanViewOrderDetails"/>
+          <include name="startDriver"/>
+          <include name="userCanCheckoutProduct"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.GuestCheckoutProductFromCart -->
+      <class name="tests.AddProductToWishlistTest">
+        <methods>
+          <include name="userCanRemoveProductFromCart"/>
+          <include name="startDriver"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+          <include name="userCanAddProductToWishlist"/>
+          <include name="userCanSearchWithAutoSuggest"/>
+        </methods>
+      </class> <!-- tests.AddProductToWishlistTest -->
+      <class name="tests.AddProductReviewTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="userCanRegisterSuccessfully"/>
+          <include name="stopDriver"/>
+          <include name="screenshotOnFailure"/>
+        </methods>
+      </class> <!-- tests.AddProductReviewTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [nopcommerce Regression Suite] -->
