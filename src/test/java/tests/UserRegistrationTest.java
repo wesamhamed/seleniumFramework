@@ -13,7 +13,7 @@ public  class UserRegistrationTest extends TestBase{
     LoginPage loginPage;
     String firstName="wesam";
     String lastName="hamad";
-    String email="test@test10.com";
+    String email="test@test.com";
     String password="12345678";
 
     @Test(priority =1,alwaysRun=true)
